@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  study-buddy:
+    build: .
+    image: study-buddy:latest
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
